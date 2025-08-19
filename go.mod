@@ -1,4 +1,4 @@
-module github.com/invopop/gobl.xinvoice
+module github.com/dennisj86/gobl.xinvoice
 
 go 1.23.0
 
