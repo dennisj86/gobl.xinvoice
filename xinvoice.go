@@ -31,7 +31,7 @@ func ConvertToGOBL(d []byte) (*gobl.Envelope, error) {
 			return nil, fmt.Errorf("converting CII to GOBL: %w", err)
 		}
 	} else if r == ublHeader {
-		env, err = ubl.ParseInvoice(d)
+		env, err = ubl.Parse(d)
 		if err != nil {
 			return nil, fmt.Errorf("converting UBL to GOBL: %w", err)
 		}
